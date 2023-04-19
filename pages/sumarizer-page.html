@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,17 +17,28 @@
         <a href="#banner">HOME</a>
       </div>
       <button id="hamburguer-menu">
-        <img src="./icons/Iconsax/Outline/hambergermenu.svg" />
+        <img src="../icons/hamburguermenu.svg" />
       </button>
     </nav>
     <div id="sumaraizer-container">
       <div id="input-container">
         <h1>INSIRA SEU TEXTO</h1>
         <textarea type="text" name="input" id="input-textarea"></textarea>
+        <div id="resume-btn">
+          <a>RESUMIR</a>
+        </div>
       </div>
       <div id="output-container">
         <h1>RESUMO</h1>
-        <textarea id="output-textarea"></textarea>
+        <textarea id="output-textarea"> </textarea>
+        <div id="output-btns">
+          <div id="copy-btn">
+            <image src="../icons/copy.svg"></image>
+          </div>
+          <div id="download-btn">
+            <image src="../icons//arrowdown.svg"></image>
+          </div>
+        </div>
       </div>
     </div>
     <footer>
@@ -41,4 +52,5 @@
       </div>
     </footer>
   </body>
+  <script src="../scripts/clickToCopy.js"></script>
 </html>

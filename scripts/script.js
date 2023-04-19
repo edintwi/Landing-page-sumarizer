@@ -3,6 +3,9 @@ const hamburgerMenu = document.querySelector("#hamburguer-menu");
 const navOptions = document.querySelector(".nav-options");
 const navBar = document.querySelector(".navbar");
 
+function clickToCopy() {
+  console.log("click");
+}
 function getDistanceFromTop(element) {
   const id = element.getAttribute("href");
   return document.querySelector(id).offsetTop;
@@ -16,7 +19,7 @@ function smoothScroll(getDistanceFromTop) {
 }
 function scrollToSection(event) {
   event.preventDefault();
-  const distanceFromTop = getDistanceFromTop(event.target) - 80;
+  const distanceFromTop = getDistanceFromTop(event.target) - 100;
   smoothScroll(distanceFromTop);
 }
 
